@@ -48,9 +48,8 @@ let hint = [];
   hint.push(`Winner);
   }
 
-  else {
-    for (i=0; i < arrG.length; i++){
-     for (j =0; j <arrS.length; j++{
+  else if {
+    for (let i=0; i < 3; i++) {
         if ( arrG[i] === arrS[i] ) {
           hint.push(`Green);
         }
@@ -58,12 +57,10 @@ let hint = [];
         else if ( (arrG[0] === arrS[1]) || (arrG[0] === arrS[2]) || (arrG[1] === arrS[2]) ) {
         hint.push(`Yellow`);
         }
-  
-        else {
-        hint.push(`Red`);
-        }
-    }
+     }
   }
-}
-return hit
+  else {
+    hint.push(`Red`);
+  }
+return hint
 }
